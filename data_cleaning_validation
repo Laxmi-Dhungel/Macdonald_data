@@ -1,0 +1,103 @@
+#Data cleaning and validation
+import pandas as pd
+import numpy as np
+df=pd.read_csv("mcdonalds.csv")
+print(df.dtypes)
+print(df.shape)
+
+for column in df.columns:
+    #print("Value counts for: ", column, df[column].value_counts())
+    print("Unique value for: ", column, df[column].unique())
+###The unique values looks okay for yummy, convenient, sicy, fattening, greasy, fast, chea, tasty, exensive, healthy, disgusting (2 unique values yes and no)
+###Unique value for like needs to be changed for I love it and I hate it +5,and -5
+###Need to look at summary statistics for age column
+###Need to translate visit frequency in some ways
+##Unique value for gender looks okay
+
+print(df["Like"].value_counts()) #I hate it have 152 value counts, and I love it have 143 value counts. 
+##Will change these to -5 and 5 resectively
+
+like_replace_dict={"I hate it!-5": -5, "I love it!+5": 5}
+
+df=df.replace({"Like": like_replace_dict})
+print(df["Like"].value_counts())  # cross-validated the change made on Like column
+
+
+df["Like"]=df["Like"].astype("int64")
+print(df["Age"].describe())  ##Looks good, no extreme values
+
+print(len(df["Age"].unique()))
+#Look for duplicate values
+print(df[df.duplicated()])  #There are 22 rows dulicated. 
+
+## Since there are not any column that can be unique such as ID. 
+#It is hard to distinguish if these rows are dulicate rows or data.
+#Will look for subsequent dulicate rows and remove those rows. 
+
+duplicate_row_index=df.index[df.duplicated()].tolist()
+
+print(duplicate_row_index)
+
+duplicate_row_index_add_1=[X + 1 for X in duplicate_row_index]
+print(duplicate_row_index_add_1)
+
+i_dulicate_index=set.intersection(set(duplicate_row_index),set(duplicate_row_index_add_1))
+print(i_dulicate_index)
+
+## i_dulicate_index are the index for rows that are dulicate for subsequent rows. Will get rid of these rows
+print(type(i_dulicate_index))
+i_dulicate_index_list=list(i_dulicate_index)
+
+print(i_dulicate_index_list)
+df = df.drop(i_dulicate_index_list)
+print(df.shape)
+
+print(df[df.duplicated()])
+
+
+##Look for misisng values
+print(df.isna().sum())  #No missing values
+
+#VisitFrequency ['Every three months' 'Once a week' 'Once a month' 'Once a year', 'More than once a week' 'Never']
+#The visit frequency will be changed to how often customer go to restaurant in a year
+# Every three months: 4 
+#Once a week: 52
+#Once a month: 12
+#Once a year: 1
+#More than once a week: >52
+#Never: 0
+
+visit_frequency_dict={"Every three months": 4, "Once a week": 52, "Once a month": 12, "Once a year": 1, "More than once a week": 156, "Never": 0}
+
+df=df.replace({"VisitFrequency": visit_frequency_dict})
+
+print(df["VisitFrequency"].value_counts())
+
+
+cols = ["yummy", "convenient", "spicy", "fattening", "greasy", "fast", "cheap", "tasty", "expensive", "healthy", "disgusting",  "Gender"]
+df[cols] = df[cols].astype('category')
+
+print(df.dtypes)
+
+#Create a column categorizing age
+bins= [15,20,25,30,35,40,45,50,55,60,65, np.inf]
+labels = ["16-20 y", "21-25 y", "26-30 y","31-35 y", "36-40 y", "41-45 y", "46-50 y", "51-55 y", "56-60 y", "61-65 y", ">65 y" ]
+df['age_group'] = pd.cut(df["Age"], bins=bins, labels=labels)
+
+
+
+
+
+#Create a column categorizing visit 
+
+df["visits_per_year"]=df["VisitFrequency"].astype('category')
+
+df=df.replace({"visits_per_year":{156:">52"}})
+
+df["visits_per_year"]=df["visits_per_year"].astype("str")
+
+df["visits_per_year"]=df["visits_per_year"].astype("category")
+
+print(type(df["visits_per_year"]))
+print(df.dtypes)
+print(df.head())
