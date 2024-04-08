@@ -60,4 +60,25 @@ Figure 6. The percentages of respondent based on their visit frequency per year.
 Figure 7. Relative percentages of number of visits based on A) age-group and B) gender. Most of the respondent in age-group 16-50 years (>30%) and > 65 years (28%) visited the restaurant 12 times a year. Most of the respondent in age-group 51-65 years (29%) visited the restaurant 4 times  ayear. Similary, for both gender the highest visit frequency was 12 times a year (>30%). The relative percentage of respondent was least (<5%) for visit frequency > 52 times a year for age group 16-20 and >31 years. For age-group 21-30 least percentages of respondent (<5%) never visited the restaurant. Similarly, for both gender the lowest visit frequency was >52 times a year (< 5%). 
 
 
+**Does age, gender and visit frequency impact like/rating?**
+
+The visit frequency and age had a significant impact on the like/rating. The average like/rating significantly increase with an increase in visit frequency (pairwise_tukeyhsd, sig (p-value<=0.05)). The average like/rating for respondent who visited >52 times a year was highest (3.8) whereas average like/rating for respondent who never visited the restaurant was lowest (-3.91). Similarly, younger age-group respondent (< 40 years) gave higher like/rating compared to respondent at age-group (>40 years). The age-group 21-25 years gave the highest rating (2.4) whereas age-group 61-65 years gave the lowest rating (-0.3). The lowest average like/rating given by age-group 61-65 years was significantly different than average like/rating given by age-group <40 years. Although, female gave higher like/rating (0.9) than male (0.6) the differences was not statistically significant (pairwise_tukeyhsd, sig (p-value<=0.05)). A vey high percentages of respondent (63%) who never visited the restaurant gave -5 for like/rating. Similarly, highest percentage of respondent (44%) who visted the restaurant >52 times a year gave 5 like/rating. This suggested that respondent who visited more are more likely to give higher like/rating. 
+
+Highest percentage (>20%) of younger age group (16-25 years) gave rating 5 whereas highest percentage of respondent (>15%) in age group greater than 61 years gave rating -5. This suggest that younger generation like the restaurant more than older populations. The relative percentages shows decline in like/rating with age. For both male (14%) and female (17%), most of the respondent gave rating 3.    
+
+
+![visit_freq_like](https://github.com/Laxmi-Dhungel/Macdonald_data/assets/154451345/5efd6fa2-7004-4a0a-a03b-bb6f8b2247bd)
+
+Figure 8. A) The average like/rating based on visit frequency. The average like/rating significantly increased with an increase in visit frequency. The differences in average like/rating was statistically significant between all the visit frequency expcept between 52 and > 52 visits per year. B) The relative percentage of like/rating based on visit frequency. The higher percentages of respondent who visited the restaurant more frequently (44% of respondent who visited >52 times a year, 25% of respondent who visited 52 times a year) gave higher like/rating (5). Similarly, a very high percentages of respondent (63%) who never visited the restaurant gave -5 like/rating. The highest percentages of respondent (18%) who visited restaurant once a year also gave -5 like/rating. 
+
+
+![like_age_gender](https://github.com/Laxmi-Dhungel/Macdonald_data/assets/154451345/2cf8564e-d74f-4676-aa99-9a7dfa9c8fd1)
+
+Figure 8. A) Average like/rating based on age group. The age-group lesser than 40 gave higher like/rating than age-group greater than 40. The average like/rating was the highest for the age-group 21-25 years (2.4) whereas the average like/rating was the lowest for the age-group 61-65 years (-0.3). The average lowest rating given by age-group 61-65 years was significantly lower than average rating given by age-group < 40 years (separated by red dash line). The highest average rating given by age-group 21-25 years was significanlty higher than average like/rating given by all the other age group except age-group 16-30 (ns) (pairwise_tukeyhsd, sig (p-value<=0.05)). B) Average like rating based on gender. Although female gave higher average rating than male, the difference was not statistically significant. 
+
+
+![age_gender_like_rel_percentages](https://github.com/Laxmi-Dhungel/Macdonald_data/assets/154451345/a511ad24-bf8f-4385-a4b2-92dcbcdc7a84)
+
+
+
 
