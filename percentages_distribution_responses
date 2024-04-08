@@ -1,0 +1,28 @@
+bar_category_list=list(df.select_dtypes(['category']).columns) #["Like", "Age", "VisitFrequency"] ##Not making barchart for their ercentages as these are integer data tyes
+
+print(bar_category_list)
+
+
+
+
+
+index_bar=0
+item_bar=len(bar_category_list)
+while index_bar<item_bar:
+    for columns in df.columns:
+        if columns==bar_category_list[index_bar]:
+            value_counts_df=pd.DataFrame((df[columns].value_counts(normalize=True))*100)
+            #print(value_counts_series.index)
+            value_counts_df[columns]=round(value_counts_df[columns], 2)
+            
+            
+            bar_percentage_category = sns.barplot(x=value_counts_df.index, y=columns, data=value_counts_df)            #bar_percentage_category.bar_label(bar_percentage_category.containers[0])
+            bar_percentage_category.bar_label(bar_percentage_category.containers[0])
+            plt.xticks(rotation=90)
+            plt.xlabel(str(columns).title())
+            plt.ylabel("Percentages")
+            plt.ylim(0,110)
+            plt.title("Distribution percentages of "+ str(columns))
+            plt.show()
+    index_bar+=1
+    
