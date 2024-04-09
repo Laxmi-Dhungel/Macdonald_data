@@ -79,6 +79,6 @@ Figure 8. A) Average like/rating based on age group. The age-group lesser than 4
 
 ![age_gender_like_rel_percentages](https://github.com/Laxmi-Dhungel/Macdonald_data/assets/154451345/a511ad24-bf8f-4385-a4b2-92dcbcdc7a84)
 
-Figure 9. A) Relative percentage of like/rating based on age. 
+Figure 9. A) Relative percentage of like/rating based on age-group. The highest percentages (>20%) of younger age-group (16-25 years) gave higer rating (5) whereas highest percentages (>15%) of older age-group (>61 years) gave lower rating (-5). With an increase in age-group the like/rating given by the highest percentage of respondent was decreased. B) Relative percentage of like/rating based on gender. The highest percentage of both male (14%) and female (17%) gave like/rating 3. 
 
 
