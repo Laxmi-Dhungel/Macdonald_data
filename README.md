@@ -48,18 +48,20 @@ Figure 4. Percentage distribution of response regarding health. Overal, the resp
 
 **Response regarding taste, health, cost, and efficiency of the restaurant based on age-group **
 
+Percentage distribution of response regarding food taste based on age-group showed that age-group below 45 years feel food as yummy but the result was reversed for age group above 45 years. Similarly, higher percentages of respondent commented food as Tasty; however the "yes" percentages was lower for older population compared to younger population. Most of the respondent commented food as not being spicy and disgusting. Higher percentage of respondent for all age-group except 41-45 years commented food as being cheap and not expensive. Most of the respondent on all age-group commented the restaurant as fast and convenient. For all age-group, higher percentages of respondent commented food as unhealthy and fattening. 
+
 
 ![food_taste](https://github.com/Laxmi-Dhungel/Macdonald_data/assets/154451345/63e0101e-2ff6-4120-afa8-8e469d9ea1a0)
 
 Figure 5. Percentage distribution of response regarding food taste based on age-group. Below 45 years, higher percentages of respondent commented food as yummy but the result was reversed for age group above 45 years (A). Similarly, higher percentages of respondent commented food as Tasty; however the "yes" percentages was lower for older population compared to younger population (B).  Higher percentages of respondent for all age group commented "no" for food as spicy and disgusting (C and D).
  
 
-![age_dist_cost](https://github.com/Laxmi-Dhungel/Macdonald_data/assets/154451345/07be6518-2ebf-40af-ae18-14a852d8fd48)
+![age_dist_cost](https://github.com/Laxmi-Dhungel/Macdonald_data/assets/154451345/a38b3e30-2fd7-4546-b6ca-27974845e87c)
 
 Figure 6. Percentage distribution of response regarding food cost and efficiency based on age-group. Higher percentage of respondent for all age-group except 41-45 years commented food as being cheap (A). Similarly, higher percentage of respondent of all age-group except 41-45 years commented "no" for food being expensive (B). Most of the respondent on all age-group commented the restaurant as fast and convenient (C). 
 
 
-![health](https://github.com/Laxmi-Dhungel/Macdonald_data/assets/154451345/75d704b5-41a3-401c-954b-36b8bed8951b)
+![healthy](https://github.com/Laxmi-Dhungel/Macdonald_data/assets/154451345/8c3c55ed-8602-4e12-8047-7eef88a6a3b4)
 
 Figure 7. Percentage distribution of response regarding health. FOr all age-group, higher percentages of respondent commented food as unhealthy and fattening (A and B). Younger age-group population commented food as greasy (<40) wheras older age-group population (except 46-50 years)  commented food as not greasy (C). 
 
