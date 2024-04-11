@@ -82,3 +82,17 @@ Figure 8. A) Average like/rating based on age group. The age-group lesser than 4
 Figure 9. A) Relative percentage of like/rating based on age-group. The highest percentages (>20%) of younger age-group (16-25 years) gave higer rating (5) whereas highest percentages (>15%) of older age-group (>61 years) gave lower rating (-5). With an increase in age-group the like/rating given by the highest percentage of respondent was decreased. B) Relative percentage of like/rating based on gender. The highest percentage of both male (14%) and female (17%) gave like/rating 3. 
 
 
+**Important predictors (food related) for like and visit frequency**
+The important predictors (food related) for like and visit frequency was determined using random forest. The results showed that "yummy" is the most important predictor for both like and visit frequency. Taste related features were the top most determinant of both like and visit frequency (3 out of top 4). The "convenient" was the second most important predictor of visit frequency but the fourth most important predictor of like/Rating. Although health related predictor "greasy" was 5th most important predictor for both like and visit frequency, another health related feature "healthy" was 6th most important feature for like whereas it was 9th most important feature for visit frequency. The cost related feature "cheap" and "expensive" ranked as 7th and 8th most important feature respectively for like whereas 8th and 6th most important feature respectively for visit frquency.  
+
+
+![Like](https://github.com/Laxmi-Dhungel/Macdonald_data/assets/154451345/f9eada23-adc2-4ce1-8399-a7f4946f3383)
+
+Figure 10. Most important determinant of like/rating. The taste related features were the most important determinant of like (3 out of top 4). The "yummy" was the top most determinant of Like. The "convenient" was the fourth most important determinant followed by health related features "greasy" and "healthy". 
+
+
+![visit_frequency](https://github.com/Laxmi-Dhungel/Macdonald_data/assets/154451345/7a286e27-6192-4590-8faf-2967f4df2b4f)
+
+Figure 11. Most important determinant of visit frequency. The tase related features were the most important determiant of visit frequency (top 3 out of 4). The "yummy" ranked the top most determinant. The "convenient" was the second most important determinant. ALthough "greasy" ranked as 5th most important determinant, another health related feature "healthy" ranked as 9th most important feature. 
+
+
