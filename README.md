@@ -46,7 +46,7 @@ Figure 4. Percentage distribution of response regarding health. Overal, the resp
 
 
 
-**Response regarding taste, health, cost, and efficiency of the restaurant based on age-group **
+**Response regarding taste, health, cost, and efficiency of the restaurant based on age-group**
 
 Percentage distribution of response regarding food taste based on age-group showed that age-group below 45 years feel food as yummy but the result was reversed for age group above 45 years. Similarly, higher percentages of respondent commented food as Tasty; however the "yes" percentages was lower for older population compared to younger population. Most of the respondent commented food as not being spicy and disgusting. Higher percentage of respondent for all age-group except 41-45 years commented food as being cheap and not expensive. Most of the respondent on all age-group commented the restaurant as fast and convenient. For all age-group, higher percentages of respondent commented food as unhealthy and fattening. 
 
@@ -125,3 +125,5 @@ Figure 10. Most important determinant of like/rating. The taste related features
 Figure 11. Most important determinant of visit frequency. The tase related features were the most important determiant of visit frequency (top 3 out of 4). The "yummy" ranked the top most determinant. The "convenient" was the second most important determinant. ALthough "greasy" ranked as 5th most important determinant, another health related feature "healthy" ranked as 9th most important feature. The most important feature was determined using random forest. 
 
 
+**Conclusion**
+The results showed that most of the respondent have positive response regarding features related to tast, cost and efficiency; however, the response regarding health related features were negative. Most of the respondent visited the restaurant 12 times a year (once a month). Younger generation visited the restaurant more often suggesting higher popularity among them. The respondent who visited more oftern gave higher like/rating. Further, younger generation gave higher like/rating to the restaurant. The like/rating was not different based on gender. The taste related features were the most important predictors of like and visit frequency.  The "yummy" was the most important predictor of both like and visit frequency. The food being "yummy" could be one of the main reasons for popularity among younger population as higher percentages of younger age-group commented food as yummy whereas the results was reversed in older age-group. The convenience ranked second most important feature to predict visit frequency. 
