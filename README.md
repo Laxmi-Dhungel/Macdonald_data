@@ -3,6 +3,10 @@ This data is MacDonald data that includes response regarding taste, health, cost
 
 **Methodology**
 
+The data were analyzed using python in spyder (https://www.spyder-ide.org/). 
+
+The library and packages used were: 
+
 **Data cleaning and validation**
 
 
@@ -83,16 +87,19 @@ Figure 9. A) Relative percentage of like/rating based on age-group. The highest 
 
 
 **Important predictors (food related) for like and visit frequency**
+
+
 The important predictors (food related) for like and visit frequency was determined using random forest. The results showed that "yummy" is the most important predictor for both like and visit frequency. Taste related features were the top most determinant of both like and visit frequency (3 out of top 4). The "convenient" was the second most important predictor of visit frequency but the fourth most important predictor of like/Rating. Although health related predictor "greasy" was 5th most important predictor for both like and visit frequency, another health related feature "healthy" was 6th most important feature for like whereas it was 9th most important feature for visit frequency. The cost related feature "cheap" and "expensive" ranked as 7th and 8th most important feature respectively for like whereas 8th and 6th most important feature respectively for visit frquency.  
 
 
 ![Like](https://github.com/Laxmi-Dhungel/Macdonald_data/assets/154451345/f9eada23-adc2-4ce1-8399-a7f4946f3383)
 
-Figure 10. Most important determinant of like/rating. The taste related features were the most important determinant of like (3 out of top 4). The "yummy" was the top most determinant of Like. The "convenient" was the fourth most important determinant followed by health related features "greasy" and "healthy". 
+Figure 10. Most important determinant of like/rating. The taste related features were the most important determinant of like (3 out of top 4). The "yummy" was the top most determinant of Like. The "convenient" was the fourth most important determinant followed by health related features "greasy" and "healthy". The most important feature was determined using random forest.
+
 
 
 ![visit_frequency](https://github.com/Laxmi-Dhungel/Macdonald_data/assets/154451345/7a286e27-6192-4590-8faf-2967f4df2b4f)
 
-Figure 11. Most important determinant of visit frequency. The tase related features were the most important determiant of visit frequency (top 3 out of 4). The "yummy" ranked the top most determinant. The "convenient" was the second most important determinant. ALthough "greasy" ranked as 5th most important determinant, another health related feature "healthy" ranked as 9th most important feature. 
+Figure 11. Most important determinant of visit frequency. The tase related features were the most important determiant of visit frequency (top 3 out of 4). The "yummy" ranked the top most determinant. The "convenient" was the second most important determinant. ALthough "greasy" ranked as 5th most important determinant, another health related feature "healthy" ranked as 9th most important feature. The most important feature was determined using random forest. 
 
 
