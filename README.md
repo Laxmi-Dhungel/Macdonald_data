@@ -5,7 +5,8 @@ This data is MacDonald data that includes response regarding taste, health, cost
 
 The data were analyzed using python in spyder (https://www.spyder-ide.org/). 
 
-The library and packages used were: 
+The library and packages used were:  pandas (1.5.3), numpy (1.24.4), matplotlib (3.5.2), seaborn(0.13.2), scikit-learn(1.0.2), scipy (1.9.1), statsmodels (0.13.2) and pingouin (0.5.4).
+
 
 **Data cleaning and validation**
 
@@ -18,7 +19,7 @@ Figure 1. The summary of data cleaning and validation steps. The data were check
 
 
 **Statistical Analysis**
-https://pingouin-stats.org/build/html/generated/pingouin.pairwise_tests.html
+The data for age based on visits per year was not normally distributed; hence Mann-whitneyU test (using pinguin) was used to determine the significant differences in the median age of respondent based on visits per year (https://pingouin-stats.org/build/html/generated/pingouin.pairwise_tests.html). The pairwise tukey_hsd test was used to determine the significant difference in like based on visit frequency, age-group and gender. The possible values for like column was narrow and ranged from -1 to 5; hence average was computed. The random forest regressor (feature_importances_) was used to determine the most feature determining like and visit frequency. 
 
 **Results**
 
