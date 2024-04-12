@@ -1,0 +1,38 @@
+import pingouin as pg  #Ref: https://pingouin-stats.org/build/html/generated/pingouin.pairwise_tests.html  
+#posthocs_age_visits = pg.pairwise_tests(dv='Age', within='visits_per_year', subject='visits_per_year',
+                              #between='visits_per_year', padjust='bonf', data=df)
+kruskal_age_visits=pg.kruskal(data=df, dv='Age', between='visits_per_year')          
+print(kruskal_age_visits)
+
+posthocs_age_visits = pd.DataFrame(pg.pairwise_tests(dv='Age',  between='visits_per_year', padjust='bonf', data=df, parametric=False))
+#print(posthocs_age_visits)
+sig_posthocs_age_visits=posthocs_age_visits[posthocs_age_visits["p-corr"]<=0.05]
+#from statannotations.Annotator import Annotator
+
+bar_age_visits=sns.barplot(x="visits_per_year", y="Age", data=df, estimator="median", errorbar=('ci', 95), capsize=0.3, order=["0", "1", "4", "12", "52", ">52"])
+# annotator = Annotator(bar_age_visits, pairs_visits, data=df, x="visits_per_year", y="Age")
+# annotator.configure(test="Mann-Whitney")
+# annotator.apply_and_annotate()
+plt.xlabel("Visits per year")
+plt.ylabel("Age")
+plt.title("Median age of popluation based on visits per year")
+plt.ylim(0,100)
+plt.vlines(x=2.5, ymin=0, ymax=80, colors='red', ls=':', lw=2, label='vline_single - partial height')
+# plt.text(8.9, 0.1, "*", ha='center', fontsize=20)
+# plt.text(1, 2.6, "*", ha='center', fontsize=20)
+bar_age_visits.annotate(" ", xy=(3.5, 48),  xytext=(3.5, 48), arrowprops=dict(color='black', lw=2, arrowstyle='-[', ), ha='center', size=30)
+plt.text(3.5, 50, "*", ha='center', fontsize=20)
+bar_age_visits.annotate(" ", xy=(1, 62),  xytext=(1, 62), arrowprops=dict(color='black', lw=2, arrowstyle='-[', ), ha='center', size=50)
+plt.text(1, 65, "*", ha='center', fontsize=20)
+
+plt.vlines(x=2.5, ymin=0, ymax=80, colors='red', ls=':', lw=2, label='vline_single - partial height')
+plt.hlines(y=73, color='k', linestyle='-', xmin=0, xmax=2)
+plt.hlines(y=73, color='k', linestyle='-', xmin=2.8, xmax=5)
+
+bar_age_visits.annotate(" ", xy=(2, 80),  xytext=(2, 80), arrowprops=dict(color='black', lw=2, arrowstyle='-[', ), ha='center', size=60)
+plt.text(2, 83, "*", ha='center', fontsize=20)
+
+
+
+
+plt.show()
