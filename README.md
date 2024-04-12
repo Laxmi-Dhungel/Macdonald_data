@@ -22,6 +22,7 @@ Figure 1. The summary of data cleaning and validation steps. The data were check
 
 
 **Statistical Analysis**
+
 The data for age based on visits per year was not normally distributed; hence Mann-whitneyU test (using pinguin) was used to determine the significant differences in the median age of respondent based on visits per year (https://pingouin-stats.org/build/html/generated/pingouin.pairwise_tests.html). The pairwise tukey_hsd test was used to determine the significant difference in like based on visit frequency, age-group and gender. The possible values for "Like" column was narrow and ranged from -5 to 5; hence the average was computed. The random forest regressor (feature_importances_) was used to determine the most feature determining like and visit frequency. 
 
 **Results**
