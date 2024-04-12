@@ -1,0 +1,38 @@
+##Relative percentages of visits per year for each age group
+
+df_age_visits=pd.crosstab(df['age_group'], df['visits_per_year'])
+
+df_age_visits_proportion=pd.crosstab(df['age_group'], df['visits_per_year'], normalize="index")
+
+df_age_visits_percentages=df_age_visits_proportion*100
+
+stacked_bar_age_visits=df_age_visits_percentages.plot(kind='bar', stacked=True)
+plt.xlabel("Age group")
+plt.ylabel("Percentages")
+plt.title("Relative percentages of visits per year for each age group")
+sns.move_legend(stacked_bar_age_visits, "upper left", bbox_to_anchor=(1, 1.05))
+
+plt.show()
+
+print(df_age_visits_percentages.idxmax(axis=1))
+print(df_age_visits_percentages.idxmin(axis=1))
+
+print(df.groupby("visits_per_year")["Age"].agg(["median", "min", "max"]))
+
+##############################################################################
+##Relative percentages of visites for each gender
+df_gender_visits=pd.crosstab(df['Gender'], df['visits_per_year'])
+
+df_gender_visits_proportion=pd.crosstab(df['Gender'], df['visits_per_year'], normalize="index")
+
+df_gender_visits_percentages=df_gender_visits_proportion*100
+
+stacked_bar_gender_visits=df_gender_visits_percentages.plot(kind="bar", stacked=True)
+plt.xlabel("Gender")
+plt.ylabel("Percentages")
+plt.title("Relative percentages of visits for each gender")
+sns.move_legend(stacked_bar_gender_visits, "upper left", bbox_to_anchor=(1, 1.05))
+plt.show()
+
+print(df_gender_visits_percentages.idxmax(axis=1))
+#########################################################################################
