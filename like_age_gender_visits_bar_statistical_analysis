@@ -75,3 +75,6 @@ plt.text(4.5, 4.65, "ns", ha='center', fontsize=10)
 
 plt.show()
 
+print(df.groupby("visits_per_year")["Like"].mean())
+print(df.groupby("age_group")["Like"].mean())
+print(df.groupby("Gender")["Like"].mean())
