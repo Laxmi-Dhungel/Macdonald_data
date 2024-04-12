@@ -1,0 +1,30 @@
+list_food_feature=['yummy', 'convenient', 'spicy', 'fattening', 'greasy', 'fast', 'cheap', 'tasty', 'expensive', 'healthy', 'disgusting']
+
+
+index_bar=0
+item_bar=len(list_food_feature)
+while index_bar<item_bar:
+    for columns in df.columns:
+        if columns==list_food_feature[index_bar]:
+            age_groupby_categories_df=pd.DataFrame(df.groupby("age_group")[columns].value_counts(normalize=True))
+            #print(age_groupby_categories_df)
+            
+
+            age_groupby_categories_df[columns]=round((age_groupby_categories_df[columns])*100, 2)
+            
+            age_groupby_categories_df=age_groupby_categories_df.reset_index()
+            
+            age_groupby_categories_df.rename(columns={"level_1": "Response"}, inplace=True)
+            
+            bar_percentage_age_category = sns.barplot(x="age_group", y=columns, data=age_groupby_categories_df, hue="Response")            #bar_percentage_category.bar_label(bar_percentage_category.containers[0])
+            #bar_percentage_age_category.bar_label(bar_percentage_age_category.containers[0])
+            plt.xticks(rotation=90)
+            plt.xlabel(str(columns).title())
+            plt.ylabel("Percentages")
+            plt.ylim(0,110)
+            plt.title("Distribution percentages of "+ str(columns)+ " based on age group")
+            sns.move_legend(bar_percentage_age_category, "upper left", bbox_to_anchor=(1, .95))
+
+            plt.show()
+    index_bar+=1
+    
