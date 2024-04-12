@@ -36,3 +36,52 @@ plt.show()
 
 print(df_gender_visits_percentages.idxmax(axis=1))
 #########################################################################################
+
+df["Like_category"]=df["Like"].astype("category")
+# gender_like_count=sns.countplot(x="Like_category", hue="Gender", data=df)
+# plt.show()
+
+df_age_like=pd.crosstab(df['age_group'], df['Like_category'])
+df_age_like_proportion=pd.crosstab(df['age_group'], df['Like_category'], normalize="index")
+df_age_like_percentages=df_age_like_proportion*100
+
+stacked_bar_age_like=df_age_like_percentages.plot(kind='bar', stacked=True, colormap='Paired')
+plt.xlabel("Age group")
+plt.ylabel("Relative percentage")
+plt.title("Relative percentages of likes/rating for each age group")
+sns.move_legend(stacked_bar_age_like, "upper left", bbox_to_anchor=(1, 1.05))
+
+plt.show()
+
+print(df_age_like_percentages.idxmax(axis=1))
+
+df_gender_like=pd.crosstab(df['Gender'], df['Like_category'])
+df_gender_like_proportion=pd.crosstab(df["Gender"], df["Like_category"], normalize="index")
+
+df_gender_like_percentages=df_gender_like_proportion*100
+
+stacked_bar_gender_like=df_gender_like_percentages.plot(kind="bar", stacked=True, colormap='Paired')
+plt.xlabel("Gender")
+plt.ylabel("Relative percentage")
+plt.title("Relative percentages of likes/rating for each gender")
+sns.move_legend(stacked_bar_gender_like, "upper left", bbox_to_anchor=(1, 1.05))
+plt.show()
+
+print(df_gender_like_percentages.idxmax(axis=1))
+
+df_visits_like=pd.crosstab(df["visits_per_year"], df["Like_category"])
+df_visits_like_proportion=pd.crosstab(df["visits_per_year"], df["Like_category"], normalize="index")
+
+df_visits_like_percentages=df_visits_like_proportion*100
+df_visits_like_percentages = df_visits_like_percentages.reindex(index = ["0", "1", "4", "12", "52", ">52"])
+
+
+stacked_bar_visits_like=df_visits_like_percentages.plot(kind="bar", stacked=True, colormap='Paired')
+plt.xlabel("Visits per year")
+plt.ylabel("Relative percentages")
+plt.title("Relative percentages of like/rating based on visit frequency")
+sns.move_legend(stacked_bar_visits_like, "upper left", bbox_to_anchor=(1, .95))
+plt.show()
+
+print(df_visits_like_percentages.idxmax(axis=1))
+
