@@ -73,17 +73,17 @@ The median age for the respondent was significantly lower for the respondent who
 
 ![median_age_visits_per_year](https://github.com/Laxmi-Dhungel/Macdonald_data/assets/154451345/12575c65-d8f4-455c-b96f-c1f7aeddf1d2)
 
-Figure 5. Median age of respondent based on their visit frequency per year. The age of respondent who visited more often (12, 52 and >52 times a year) was significantly different than the age of respondent who visited less often (0, 1 and 4 times a year) (Mann-whitney test, sig (p <=0.05)). The lesser visit frequency and higher visit frequency are separated by red dashed line. Further, within lesser visit frequency the median age of respondent who visited restaurant 4 times a year was significantly lower than who never visited the restaurant. Similarly, within the higher visit frequency the median age of respondent who visited 52 times a year is significantly lower than the respondent who visited the restaurant 12 times a year. 
+Figure 8. Median age of respondent based on their visit frequency per year. The age of respondent who visited more often (12, 52 and >52 times a year) was significantly different than the age of respondent who visited less often (0, 1 and 4 times a year) (Mann-whitney test, sig (p <=0.05)). The lesser visit frequency and higher visit frequency are separated by red dashed line. Further, within lesser visit frequency the median age of respondent who visited restaurant 4 times a year was significantly lower than who never visited the restaurant. Similarly, within the higher visit frequency the median age of respondent who visited 52 times a year is significantly lower than the respondent who visited the restaurant 12 times a year. 
 
 
 ![visits_per_year](https://github.com/Laxmi-Dhungel/Macdonald_data/assets/154451345/0446b066-77f7-4b75-b077-13cc3af43e5e)
 
-Figure 6. The percentages of respondent based on their visit frequency per year. Most of the respondent visited the restaurant 12 times a year (30.17%) whereas the least percentages of the respondent visited the restaurant > 52 times a year (3.72%).
+Figure 9. The percentages of respondent based on their visit frequency per year. Most of the respondent visited the restaurant 12 times a year (30.17%) whereas the least percentages of the respondent visited the restaurant > 52 times a year (3.72%).
 
 
 ![relative_percentages_age_gender](https://github.com/Laxmi-Dhungel/Macdonald_data/assets/154451345/b43982c6-bc90-4bde-ba54-61dd4a91b3e0)
 
-Figure 7. Relative percentages of number of visits based on A) age-group and B) gender. Most of the respondent in age-group 16-50 years (>30%) and > 65 years (28%) visited the restaurant 12 times a year. Most of the respondent in age-group 51-65 years (29%) visited the restaurant 4 times  ayear. Similary, for both gender the highest visit frequency was 12 times a year (>30%). The relative percentage of respondent was least (<5%) for visit frequency > 52 times a year for age group 16-20 and >31 years. For age-group 21-30 least percentages of respondent (<5%) never visited the restaurant. Similarly, for both gender the lowest visit frequency was >52 times a year (< 5%). 
+Figure 10. Relative percentages of number of visits based on A) age-group and B) gender. Most of the respondent in age-group 16-50 years (>30%) and > 65 years (28%) visited the restaurant 12 times a year. Most of the respondent in age-group 51-65 years (29%) visited the restaurant 4 times  ayear. Similary, for both gender the highest visit frequency was 12 times a year (>30%). The relative percentage of respondent was least (<5%) for visit frequency > 52 times a year for age group 16-20 and >31 years. For age-group 21-30 least percentages of respondent (<5%) never visited the restaurant. Similarly, for both gender the lowest visit frequency was >52 times a year (< 5%). 
 
 
 **Does age, gender and visit frequency impact like/rating?**
@@ -95,17 +95,17 @@ Highest percentage (>20%) of younger age group (16-25 years) gave rating 5 where
 
 ![visit_freq_like](https://github.com/Laxmi-Dhungel/Macdonald_data/assets/154451345/5efd6fa2-7004-4a0a-a03b-bb6f8b2247bd)
 
-Figure 8. A) The average like/rating based on visit frequency. The average like/rating significantly increased with an increase in visit frequency. The differences in average like/rating was statistically significant between all the visit frequency expcept between 52 and > 52 visits per year. B) The relative percentage of like/rating based on visit frequency. The higher percentages of respondent who visited the restaurant more frequently (44% of respondent who visited >52 times a year, 25% of respondent who visited 52 times a year) gave higher like/rating (5). Similarly, a very high percentages of respondent (63%) who never visited the restaurant gave -5 like/rating. The highest percentages of respondent (18%) who visited restaurant once a year also gave -5 like/rating. 
+Figure 11. A) The average like/rating based on visit frequency. The average like/rating significantly increased with an increase in visit frequency. The differences in average like/rating was statistically significant between all the visit frequency expcept between 52 and > 52 visits per year. B) The relative percentage of like/rating based on visit frequency. The higher percentages of respondent who visited the restaurant more frequently (44% of respondent who visited >52 times a year, 25% of respondent who visited 52 times a year) gave higher like/rating (5). Similarly, a very high percentages of respondent (63%) who never visited the restaurant gave -5 like/rating. The highest percentages of respondent (18%) who visited restaurant once a year also gave -5 like/rating. 
 
 
 ![like_age_gender](https://github.com/Laxmi-Dhungel/Macdonald_data/assets/154451345/2cf8564e-d74f-4676-aa99-9a7dfa9c8fd1)
 
-Figure 8. A) Average like/rating based on age group. The age-group lesser than 40 gave higher like/rating than age-group greater than 40. The average like/rating was the highest for the age-group 21-25 years (2.4) whereas the average like/rating was the lowest for the age-group 61-65 years (-0.3). The average lowest rating given by age-group 61-65 years was significantly lower than average rating given by age-group < 40 years (separated by red dash line). The highest average rating given by age-group 21-25 years was significanlty higher than average like/rating given by all the other age group except age-group 16-30 (ns) (pairwise_tukeyhsd, sig (p-value<=0.05)). B) Average like rating based on gender. Although female gave higher average rating than male, the difference was not statistically significant. 
+Figure 12. A) Average like/rating based on age group. The age-group lesser than 40 gave higher like/rating than age-group greater than 40. The average like/rating was the highest for the age-group 21-25 years (2.4) whereas the average like/rating was the lowest for the age-group 61-65 years (-0.3). The average lowest rating given by age-group 61-65 years was significantly lower than average rating given by age-group < 40 years (separated by red dash line). The highest average rating given by age-group 21-25 years was significanlty higher than average like/rating given by all the other age group except age-group 16-30 (ns) (pairwise_tukeyhsd, sig (p-value<=0.05)). B) Average like rating based on gender. Although female gave higher average rating than male, the difference was not statistically significant. 
 
 
 ![age_gender_like_rel_percentages](https://github.com/Laxmi-Dhungel/Macdonald_data/assets/154451345/a511ad24-bf8f-4385-a4b2-92dcbcdc7a84)
 
-Figure 9. A) Relative percentage of like/rating based on age-group. The highest percentages (>20%) of younger age-group (16-25 years) gave higer rating (5) whereas highest percentages (>15%) of older age-group (>61 years) gave lower rating (-5). With an increase in age-group the like/rating given by the highest percentage of respondent was decreased. B) Relative percentage of like/rating based on gender. The highest percentage of both male (14%) and female (17%) gave like/rating 3. 
+Figure 13. A) Relative percentage of like/rating based on age-group. The highest percentages (>20%) of younger age-group (16-25 years) gave higer rating (5) whereas highest percentages (>15%) of older age-group (>61 years) gave lower rating (-5). With an increase in age-group the like/rating given by the highest percentage of respondent was decreased. B) Relative percentage of like/rating based on gender. The highest percentage of both male (14%) and female (17%) gave like/rating 3. 
 
 
 **Important predictors (food related) for like and visit frequency**
@@ -116,13 +116,13 @@ The important predictors (food related) for like and visit frequency was determi
 
 ![Like](https://github.com/Laxmi-Dhungel/Macdonald_data/assets/154451345/f9eada23-adc2-4ce1-8399-a7f4946f3383)
 
-Figure 10. Most important determinant of like/rating. The taste related features were the most important determinant of like (3 out of top 4). The "yummy" was the top most determinant of Like. The "convenient" was the fourth most important determinant followed by health related features "greasy" and "healthy". The most important feature was determined using random forest.
+Figure 14. Most important determinant of like/rating. The taste related features were the most important determinant of like (3 out of top 4). The "yummy" was the top most determinant of Like. The "convenient" was the fourth most important determinant followed by health related features "greasy" and "healthy". The most important feature was determined using random forest.
 
 
 
 ![visit_frequency](https://github.com/Laxmi-Dhungel/Macdonald_data/assets/154451345/7a286e27-6192-4590-8faf-2967f4df2b4f)
 
-Figure 11. Most important determinant of visit frequency. The tase related features were the most important determiant of visit frequency (top 3 out of 4). The "yummy" ranked the top most determinant. The "convenient" was the second most important determinant. ALthough "greasy" ranked as 5th most important determinant, another health related feature "healthy" ranked as 9th most important feature. The most important feature was determined using random forest. 
+Figure 15. Most important determinant of visit frequency. The tase related features were the most important determiant of visit frequency (top 3 out of 4). The "yummy" ranked the top most determinant. The "convenient" was the second most important determinant. ALthough "greasy" ranked as 5th most important determinant, another health related feature "healthy" ranked as 9th most important feature. The most important feature was determined using random forest. 
 
 
 **Conclusion**
