@@ -1,4 +1,4 @@
-**Important determinant of MacDonald's like and visit frequency**
+**Important determinants of MacDonald's like and visit frequency**
 
 **Summary**
 
