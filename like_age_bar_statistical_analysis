@@ -1,0 +1,39 @@
+hist_like_age_group=sns.displot(x="Like", data=df, col="age_group", col_wrap=3)
+plt.show()  #Data not normally distributed for like grouped by agegroup
+#Although data not normally distributed. Median not applicable as it can be less informative.
+
+#from scipy.stats import f_oneway
+from statsmodels.stats.multicomp import pairwise_tukeyhsd
+
+tukey_age_like=pairwise_tukeyhsd(endog=df["Like"], groups=df["age_group"], alpha=0.05)
+tukey_summary_age_like=tukey_age_like.summary()
+tukey_df_age_like = pd.DataFrame(data=tukey_summary_age_like.data[1:], columns=tukey_summary_age_like.data[0])
+significant_tukey_age_like=tukey_df_age_like[tukey_df_age_like["p-adj"]<=0.05]
+##Age group 21-25 had significnatly higher average like than any other age group except 16-20 y and 26-30 years
+#Age group 16-20 years had significantly higher average like compared to age group 56-6- and 61-65
+#Age group 26-30 had significant average liking than >40 years
+#Age-group 31-35 had significant higher liking than 56-60 and 61-65 years
+#Age group 36-40 had significant higher liking than 61-65 years
+
+#The age group 21-25 had highest average liking and age-group 61-65 had the lowest average liking. The statistical analysis showed that 
+##
+
+##
+
+
+bar_like_age=sns.barplot(x="age_group", y="Like", data=df, errorbar="se", capsize=0.3)
+plt.xticks(rotation=90)
+plt.xlabel("Age group")
+plt.ylabel("Like/Rating")
+plt.title("Average like/rating based on age group")
+plt.ylim(-1,3)
+plt.vlines(x=4.5, ymin=-0.7, ymax=2.6, colors='red', ls=':', lw=2, label='vline_single - partial height')
+plt.text(8.9, 0.1, "*", ha='center', fontsize=20)
+plt.text(1, 2.6, "*", ha='center', fontsize=20)
+bar_like_age.annotate(" ", xy=(1.5, 2.5),  xytext=(1.5, 2.5), arrowprops=dict(color='black', lw=2, arrowstyle='-[', ), ha='center', size=10)
+plt.text(1.5, 2.6, "ns", ha='center', fontsize=10)
+bar_like_age.annotate(" ", xy=(0.5, 2.5),  xytext=(0.5, 2.5), arrowprops=dict(color='black', lw=2, arrowstyle='-[', ), ha='center', size=10)
+plt.text(0.5, 2.6, "ns", ha='center', fontsize=10)
+
+plt.show()
+##Looks like average rating decreased with age
