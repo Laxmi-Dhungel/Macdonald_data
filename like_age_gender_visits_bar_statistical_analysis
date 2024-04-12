@@ -37,3 +37,41 @@ plt.text(0.5, 2.6, "ns", ha='center', fontsize=10)
 
 plt.show()
 ##Looks like average rating decreased with age
+
+
+#############
+
+tukey_gender_like=pairwise_tukeyhsd(endog=df["Like"], groups=df["Gender"], alpha=0.05)
+tukey_summary_gender_like=tukey_gender_like.summary()
+print(tukey_summary_gender_like)
+tukey_df_gender_like=pd.DataFrame(data=tukey_summary_gender_like.data[1:], columns=tukey_summary_gender_like.data[0])
+significant_tukey_gender_like=tukey_df_gender_like[tukey_df_gender_like["p-adj"]<=0.05]
+##No significant difference in like between male and female
+bar_like_gender=sns.barplot(x="Gender", y="Like", data=df, errorbar="se", capsize=0.3)
+plt.xticks(rotation=90)
+plt.xlabel("Gender")
+plt.ylabel("Like/Rating")
+plt.title("Average like/Rating based on gender")
+
+plt.show()
+
+
+#tukey test for visits per year and like
+tukey_visits_like=pairwise_tukeyhsd(endog=df["Like"], groups=df["visits_per_year"], alpha=0.05)
+tukey_summary_visits_like=tukey_visits_like.summary()
+tukey_df_visits_like=pd.DataFrame(data=tukey_summary_visits_like.data[1:], columns=tukey_summary_visits_like.data[0])
+significant_tukey_visits_like=tukey_df_visits_like[tukey_df_visits_like["p-adj"]<=0.05]
+##The result significant betweeen all the pairs except for 52 and >52 
+
+#
+bar_like_visists=sns.barplot(x="visits_per_year", y="Like", data=df, errorbar="se", capsize=0.3, order=["0", "1", "4", "12", "52", ">52"])
+plt.xticks(rotation=90)
+plt.xlabel("Visits per year")
+plt.ylabel("Like/Rating")
+plt.title("Average like/rating based on visit frequency")
+plt.ylim(-5,5)
+bar_like_visists.annotate(" ", xy=(4.5, 4.3),  xytext=(4.5, 4.3), arrowprops=dict(color='black', lw=2, arrowstyle='-[', ), ha='center', size=25)
+plt.text(4.5, 4.65, "ns", ha='center', fontsize=10)
+
+plt.show()
+
