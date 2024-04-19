@@ -137,5 +137,4 @@ Hence, based in these results it can be suggested that older population are not 
 **Recommendations**
 
 1. Investigate taste preferences of the older population and include those as food options to attract the customers of all age-groups.
-2. 
-3. As there is a rise in awareness towards health, it can be an important predictor in future. The customers were not satisfied with features related to health. Hence, the restaurant may need to investigate on healthier and tastier food options for future. 
+2. As there is a rise in awareness towards health, it can be an important predictor in future. The customers were not satisfied with features related to health. Hence, the restaurant may need to investigate on healthier and tastier food options for future. 
